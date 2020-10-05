@@ -13,7 +13,7 @@ public class loginSteps {
 
     @Given("I navigate to betway site {string}")
     public void i_navigate_to_betway_site(String Url) {
-        System.setProperty("webdriver.chrome.driver", "C:\\drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//src//drivers//chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get(Url);

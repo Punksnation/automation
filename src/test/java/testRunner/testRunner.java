@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "C:\\Users\\Administrator\\Documents\\BetwayJava\\src\\test\\java\\feature_file\\login.feature",
+        features ="src\\test\\java\\feature_file",
         glue = "module",
         dryRun = false,
         monochrome = true,
